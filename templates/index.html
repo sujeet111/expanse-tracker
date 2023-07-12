@@ -59,7 +59,7 @@
             </tr>
         </thead>
         <tbody>
-            {%for i in fetch_data%}
+            {% for i in data.items %}
             <tr>
                 <td>{{i.expense_name}}</td>
                 <td>{{i.expense_value}}</td>
@@ -70,7 +70,7 @@
                 <td><a href="{{url_for('update_expense',id=i.key)}}">Update</a>
                     <a href="{{url_for('delete_expense',id=i.key)}}">Delete</a></td>
             </tr>
-            {% endfor%}
+            {% endfor %}
         </tbody>
     </table>
 
