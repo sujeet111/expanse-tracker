@@ -7,4 +7,4 @@ micros:
     primary: true
     run: gunicorn main:app
     public: true
-    dev: flask --app main run
+    dev: flask --app main run --debug

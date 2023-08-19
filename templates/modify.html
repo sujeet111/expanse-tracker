@@ -9,9 +9,9 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <form action="" method="post" id="updateform">
-            <input type="text" name="expense_key" id="expense_key" value="{{key}}" readonly="true"><br>
-            <textarea id="expense_update" name="expense_update" form="updateform" rows="10" cols="35">{{fetch_data}}</textarea>
+        <form action="" method="post" id="modifyform">
+            <input type="text" name="key" id="key" value="{{key}}" readonly="true"><br>
+            <textarea id="NewData" name="NewData" form="modifyform" rows="10" cols="35">{{fetch_data}}</textarea>
             <input type="submit" name="submit" value="submit">
         </form>
     </body>
